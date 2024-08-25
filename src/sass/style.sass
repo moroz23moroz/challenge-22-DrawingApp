@@ -2,19 +2,15 @@
 @import 'base/fonts'
 @import 'base/variables'
 
-html,
-body
-    height: 100%
-
 body
     margin: 0
     display: flex
     flex-direction: column
     align-items: center
     justify-content: center
-    // background: $dark-color
-    // font-family: $lato
-    // color: $main-color
+    background-color: #f5f5f5
+    font-family: $comfortaa, sans-serif
+    height: 100vh
 
 *
     box-sizing: border-box
@@ -23,34 +19,26 @@ body
 html
     scroll-behavior: smooth
 
-button
-    padding: 0
-    background-color: transparent
-    border: none
+canvas
+    border: 2px solid steelblue
 
-h1, h2, h3, h4
-    margin: 0
-    font-weight: normal
-
-img
-    width: auto
-    max-width: 100%
-    height: auto
-
-iframe, img, svg, video
-    max-width: 100%
-    vertical-align: top
-    height: auto
-
-p
-    margin: 0
-
-ul
-    margin: 0
-    padding-left: 0
-
-li
-    list-style-type: none
-
-a
-    text-decoration: none
+.toolbox
+    background-color: steelblue
+    border: 1px solid slateblue
+    display: flex
+    width: 804px
+    padding: 1rem
+    & > *
+        background-color: whitesmoke
+        border: none
+        display: inline-flex
+        align-items: center
+        justify-content: center
+        font-size: 2rem
+        height: 50px
+        width: 50px
+        margin: 0.25rem
+        padding: 0.25rem
+        cursor: pointer
+        &:last-child
+            margin-left: auto
